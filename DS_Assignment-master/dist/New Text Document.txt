@@ -1,0 +1,32 @@
+{
+  "title": "NeoDash ⚡",
+  "version": "1.0",
+  "editable": true,
+  "reports": [
+    {
+      "title": "Hi there 👋",
+      "width": 12,
+      "height": 8,
+      "type": "graph",
+      "query": "MATCH (a:Person) -[r:KNOWS]->(b:Person)\nRETURN a,r,b",
+      "page": 8,
+      "properties": [
+        "name"
+      ],
+      "parameters": "",
+      "refresh": 0
+    },
+    {
+      "title": "Lunch Time",
+      "width": 4,
+      "height": 4,
+      "type": "table",
+      "query": "MATCH (n:Person)\nRETURN n.lunch_time",
+      "page": 1,
+      "properties": [],
+      "parameters": "",
+      "refresh": 0
+    },
+    {}
+  ]
+}
